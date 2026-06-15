@@ -1,0 +1,70 @@
+{
+  "name": "ONG",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Nome da ONG ou institui\u00e7\u00e3o"
+    },
+    "description": {
+      "type": "string",
+      "description": "Descri\u00e7\u00e3o da ONG, miss\u00e3o e \u00e1rea de atua\u00e7\u00e3o"
+    },
+    "address": {
+      "type": "string",
+      "description": "Endere\u00e7o completo da ONG"
+    },
+    "latitude": {
+      "type": "number",
+      "description": "Coordenada de latitude para o mapa"
+    },
+    "longitude": {
+      "type": "number",
+      "description": "Coordenada de longitude para o mapa"
+    },
+    "logo_url": {
+      "type": "string",
+      "description": "URL da logo ou foto da ONG"
+    },
+    "website": {
+      "type": "string",
+      "description": "Site ou rede social da ONG"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Telefone de contato"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "assistencia_social",
+        "saude",
+        "educacao",
+        "meio_ambiente",
+        "cultura",
+        "direitos_humanos",
+        "outro"
+      ],
+      "default": "assistencia_social",
+      "description": "Categoria de atua\u00e7\u00e3o da ONG"
+    },
+    "verified": {
+      "type": "boolean",
+      "default": false,
+      "description": "Se a ONG foi verificada por um administrador"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "approved",
+        "rejected"
+      ],
+      "default": "pending",
+      "description": "Status de aprova\u00e7\u00e3o da ONG"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

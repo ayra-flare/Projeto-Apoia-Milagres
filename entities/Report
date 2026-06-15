@@ -1,0 +1,41 @@
+{
+  "name": "Report",
+  "type": "object",
+  "properties": {
+    "description": {
+      "type": "string",
+      "description": "Descri\u00e7\u00e3o da den\u00fancia ou relato"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "direitos_humanos",
+        "saude",
+        "educacao",
+        "infraestrutura",
+        "meio_ambiente",
+        "corrupcao",
+        "outro"
+      ],
+      "default": "outro",
+      "description": "Categoria da den\u00fancia"
+    },
+    "photo_url": {
+      "type": "string",
+      "description": "URL da foto anexada (metadados removidos)"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pendente",
+        "em_andamento",
+        "resolvida"
+      ],
+      "default": "pendente",
+      "description": "Status do processamento da den\u00fancia"
+    }
+  },
+  "required": [
+    "description"
+  ]
+}

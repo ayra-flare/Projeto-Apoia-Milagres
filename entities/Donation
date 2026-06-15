@@ -1,0 +1,36 @@
+{
+  "name": "Donation",
+  "type": "object",
+  "properties": {
+    "demand_id": {
+      "type": "string",
+      "description": "ID da demanda \u00e0 qual o volunt\u00e1rio se candidatou"
+    },
+    "volunteer_id": {
+      "type": "string",
+      "description": "ID do usu\u00e1rio volunt\u00e1rio"
+    },
+    "volunteer_name": {
+      "type": "string",
+      "description": "Nome do volunt\u00e1rio (denormalizado)"
+    },
+    "message": {
+      "type": "string",
+      "description": "Mensagem do volunt\u00e1rio para a ONG"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pendente",
+        "confirmada",
+        "concluida",
+        "cancelada"
+      ],
+      "default": "pendente",
+      "description": "Status da candidatura"
+    }
+  },
+  "required": [
+    "demand_id"
+  ]
+}

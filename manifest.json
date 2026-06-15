@@ -1,0 +1,24 @@
+{
+  "name": "Apoia Milagres",
+  "short_name": "Apoia Milagres",
+  "description": "Plataforma de apoio a milagres",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#FF7F32",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/src/pages/ApoiaMilagresLogo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/src/pages/ApoiaMilagresLogo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

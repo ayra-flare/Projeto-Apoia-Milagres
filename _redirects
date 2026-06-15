@@ -1,0 +1,13 @@
+/* Redirect all non-matching routes to index.html for SPA routing */
+/*  /index.html   200
+
+/* Set cache headers for static assets */
+/dist/*
+  Cache-Control: max-age=31536000
+  
+/* Ensure JavaScript modules are served with correct MIME type */
+/*.js
+  Content-Type: application/javascript
+  
+/*.jsx
+  Content-Type: application/javascript
